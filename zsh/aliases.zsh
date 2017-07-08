@@ -18,7 +18,7 @@ alias cache="sudo discoveryutil udnsflushcaches"
 alias emo="open http://www.emoji-cheat-sheet.com/"
 
 alias searchcask="open https://www.caskroom.github.io/search"
-alias chrome="open https://goggle.com"
+alias chrome="open https://google.com"
 
 # Doable specific
 alias release='git checkout release && git pull origin release'
@@ -39,9 +39,8 @@ alias ms='cd ~/dev/_projects/tommy/tommyldunn.com'
 alias ty='cd ~/dev/tymontague.com'
 alias katie='cd ~/dev/_projects/katie'
 alias jackie='cd ~/dev/_projects/jackie/jacquelynmaloney.com'
-alias dfiles="cd ~/.dotfiles"
-alias ea="cd ~/.dotfiles"
-alias projects="~/dev/_projects"
+alias projects="cd ~/dev/_projects"
+alias atm="atom ."
 
 # Get operating system
 platform='unknown'
@@ -53,6 +52,8 @@ if [[ $unamestr == 'Linux' ]]; then
 fi
 
 # dotfiles support
+alias ea="vim ~/.dotfiles/zsh/aliases.zsh"
+alias dfiles="cd ~/.dotfiles"
 alias yav='dotfiles vim-add-plugin'
 alias ydv='dotfiles vim-delete-plugin'
 alias ylv='dotfiles vim-list-plugin'

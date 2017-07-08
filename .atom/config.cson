@@ -19,8 +19,9 @@
   core:
     disabledPackages: [
       "linter-rubocop"
-      "language-generic-config"
+      "tree-ignore"
     ]
+    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".hg"
       ".svn"
@@ -68,6 +69,7 @@
   pigments:
     markerType: "native-dot"
   "tree-view":
+    hideIgnoredNames: true
     hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false

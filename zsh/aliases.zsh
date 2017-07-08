@@ -17,15 +17,8 @@ alias cache="sudo discoveryutil udnsflushcaches"
 # open up emoji cheat sheet in browser
 alias emo="open http://www.emoji-cheat-sheet.com/"
 
-# open up github in browser
-alias dogit="open https://www.github.com/DoableInnovation"
-alias wesgit="open https://www.github.com/wesbos"
-alias github="open https://www.github.com/Tommyldunn"
-alias mdo="open https://www.github.com/mdo"
-
-alias bootdocs="open http://www.v4-alpha.getbootstrap.com/getting-started/introduction/"
 alias searchcask="open https://www.caskroom.github.io/search"
-alias chrome="open http://www.goggle.com"
+alias chrome="open https://goggle.com"
 
 # Doable specific
 alias release='git checkout release && git pull origin release'
@@ -36,7 +29,6 @@ alias dd="~/dev/doable"
 alias ddocs="~/dev/doableInnovation.github.io"
 alias ddf="~/dev/_doable/doable-frontend"
 alias ddb="~/dev/_doable/doable-backend"
-alias ddd="~/dev/_doable/doable-backend/_build"
 alias awsl="eval $(aws ecr get-login)"
 alias ddbs="rails s -p 3002 -e local-development"
 
@@ -44,11 +36,11 @@ alias ddbs="rails s -p 3002 -e local-development"
 alias default='docker-machine start default && eval $(docker-machine env default) && docker-compose up'
 
 # Other projects
-alias tommy='cd ~/dev/_projects/tommy/tommydunn.io'
+alias tommy='cd ~/dev/_projects/tommy/tommydunn.com'
 alias ty='cd ~/dev/tymontague.com'
 alias katie='cd ~/dev/_projects/katie'
 alias jackie='cd ~/dev/_projects/jackie/jacquelynmaloney.com'
-alias dotfiles="cd ~/.dotfiles"
+alias dfiles="cd ~/.dotfiles"
 alias projects="~/dev/_projects"
 
 # Get operating system
@@ -96,9 +88,9 @@ TRAPHUP() {
   source $dotfiles/zsh/aliases.zsh
 }
 
-alias ae='vim $dotfiles/zsh/aliases.zsh' #alias edit
-alias ar='source $dotfiles/zsh/aliases.zsh'  #alias reload
-alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
+alias ae='vim $dotfiles/zsh/aliases.zsh' # alias edit
+alias ar='source $dotfiles/zsh/aliases.zsh'  # alias reload
+alias gar="killall -HUP -u \"$USER\" zsh"  # global alias reload
 
 # vim using
 mvim --version > /dev/null 2>&1
@@ -193,7 +185,6 @@ alias gz='tar -zcvf'
 
 # Ruby
 alias c='rails c' # Rails 3
-alias co='script/console' # Rails 2
 alias cod='script/console --debugger'
 
 #If you want your thin to listen on a port for local VM development
@@ -207,12 +198,8 @@ alias ka9='killall -9'
 alias k9='kill -9'
 
 # Gem install
-alias sgi='sudo gem install --no-ri --no-rdoc'
+alias gemi='gem install --no-ri --no-rdoc'
 
-# TODOS
-# This uses NValt (NotationalVelocity alt fork) - http://brettterpstra.com/project/nvalt/
-# to find the note called 'todo'
-alias todo='open nvalt://find/todo'
 
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
@@ -220,15 +207,6 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
 
-# Zeus
-alias zs='zeus server'
-alias zc='zeus console'
-alias zr='zeus rspec'
-alias zrc='zeus rails c'
-alias zrs='zeus rails s'
-alias zrdbm='zeus rake db:migrate'
-alias zrdbtp='zeus rake db:test:prepare'
-alias zzz='rm .zeus.sock; pkill zeus; zeus start'
 
 # Rspec
 alias rs='rspec spec'

@@ -46,8 +46,8 @@ desc 'Updates the installation'
 task :update do
   Rake::Task["vundle_migration"].execute if needs_migration_to_vundle?
   Rake::Task["install"].execute
-  #TODO: for now, we do the same as install. But it would be nice
-  #not to clobber zsh files
+  # TODO: for now, we do the same as install. But it would be nice
+  # not to clobber zsh files
 end
 
 task :submodule_init do
@@ -270,9 +270,9 @@ def install_prezto
 
   puts
   puts "Creating directories for your customizations"
-  run %{ mkdir -p $HOME/.zsh.before }
-  run %{ mkdir -p $HOME/.zsh.after }
-  run %{ mkdir -p $HOME/.zsh.prompts }
+  run %{ mkdir -p $HOME/.dotfiles/_tmp/.zsh.before }
+  run %{ mkdir -p $HOME/.dotfiles/_tmp/.zsh.after }
+  run %{ mkdir -p $HOME/.dotfiles/_tmp/.zsh.prompts }
 
   if ENV["SHELL"].include? 'zsh' then
     puts "Zsh is already configured as your shell of choice. Restart your session to load the new settings"
@@ -311,7 +311,7 @@ def install_files(files, method = :symlink)
 
     if File.exists?(target) && (!File.symlink?(target) || (File.symlink?(target) && File.readlink(target) != source))
       puts "[Overwriting] #{target}...leaving original at #{target}.backup..."
-      run %{ mv "$HOME/.#{file}" "$HOME/.#{file}.backup" }
+      run %{ mv "$HOME/.#{file}" "$HOME/.dotfiles/_tmp/_backups/.#{file}.backup" }
     end
 
     if method == :symlink

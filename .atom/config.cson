@@ -19,6 +19,7 @@
   core:
     disabledPackages: [
       "linter-rubocop"
+      "language-generic-config"
     ]
     ignoredNames: [
       ".hg"
@@ -35,6 +36,8 @@
       "improved-chester-atom-syntax"
     ]
     titleBar: "custom-inset"
+  "default-language":
+    defaultLanguage: "Shell Script"
   editor:
     fontFamily: "Inconsolata-dz for Powerline"
     softWrap: true

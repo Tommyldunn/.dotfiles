@@ -26,6 +26,5 @@ packages: [
   "package-sync"
   "pigments"
   "ruby-block"
-  "sync-settings"
   "tree-ignore"
 ]

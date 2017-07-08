@@ -64,10 +64,6 @@
     forceOverwrite: true
   pigments:
     markerType: "native-dot"
-  "sync-settings":
-    _lastBackupHash: "c1ce433887cef37ffb81c24d0d9e687fc5332ca0"
-    gistId: "6076a137dcc9c8a306edadbf7c3c1ad5"
-    personalAccessToken: "2005c77fb898b4ec74c069eb11b7369a77ec37cb"
   "tree-view":
     hideVcsIgnoredFiles: false
   welcome:

@@ -16,3 +16,8 @@ vim/sessions
 bin/subl
 tags
 .DS_STORE
+# Atom sync
+/.atom/blob-store/
+/.atom/compile-cache/
+/.atom/packages/
+/.atom/storage/

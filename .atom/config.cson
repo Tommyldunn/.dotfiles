@@ -1,0 +1,77 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "d9e15803-719a-4ab4-97b8-03b8403fb795"
+      loggerLevel: "verbose"
+    ruby:
+      rubocop_path: "/Users/tdunn/.rbenv/versions/2.4.0/bin/rubocop"
+    scss:
+      beautify_on_save: true
+      configPath: "/Users/tdunn/.dotfiles/_configs/.csscomb.json"
+      convert_quotes: "double"
+      default_beautifier: "CSScomb"
+      preserve_newlines: true
+    typescript:
+      beautify_on_save: true
+      end_with_newline: true
+      space_in_paren: true
+    yaml: {}
+  core:
+    disabledPackages: [
+      "linter-rubocop"
+    ]
+    ignoredNames: [
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+    ]
+    openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "improved-chester-atom-syntax"
+    ]
+    titleBar: "custom-inset"
+  editor:
+    fontFamily: "Inconsolata-dz for Powerline"
+    softWrap: true
+  "exception-reporting":
+    userId: "2b0e0e15-3f3d-4321-83dd-ccabce2208aa"
+  "linter-rubocop":
+    command: "/Users/tdunn/.rbenv/versions/2.4.0/bin/rubocop"
+    disableWhenNoConfigFile: true
+  "linter-scss-lint":
+    additionalArguments: "4"
+    disableWhenNoConfigFileInPath: true
+  "linter-tslint":
+    fixOnSave: true
+    ignoreTypings: true
+  "linter-ui-default":
+    decorateOnTreeView: "None"
+    hidePanelWhenEmpty: true
+    panelRepresents: "Entire Project"
+    showPanel: true
+    tooltipFollows: "Keyboard"
+  "markdown-preview":
+    useGitHubStyle: true
+  "one-dark-ui":
+    hideDockButtons: true
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  pigments:
+    markerType: "native-dot"
+  "sync-settings":
+    _lastBackupHash: "c1ce433887cef37ffb81c24d0d9e687fc5332ca0"
+    gistId: "6076a137dcc9c8a306edadbf7c3c1ad5"
+    personalAccessToken: "2005c77fb898b4ec74c069eb11b7369a77ec37cb"
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  welcome:
+    showOnStartup: false
+".source.yaml":
+  editor:
+    autoIndentOnPaste: true

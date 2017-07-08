@@ -30,3 +30,4 @@ tags
 /.atom/.npm
 .atom/recovery
 .DS_STORE
+_tmp

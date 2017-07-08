@@ -1,7 +1,7 @@
 # Dotfiles
 
 #### NOTE:
-Originally forked from [Yan Pritzker's dotfiles](https://github.com/skwp/dotfiles). It's time to update, tweak, and customize to suite my day to day needs a bit better. Fork at your own risk. However, Ideas and PR's are welcome.   
+Originally forked from [Yan Pritzker's dotfiles](https://github.com/skwp/dotfiles). Fork at your own risk.
 
 ## Screenshot
 

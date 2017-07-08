@@ -6,7 +6,7 @@ dotfiles=$HOME/.dotfiles
 # export TOMMY_DUNN="$HOME/.dotfiles/secrets"
 # Edit hosts file
 alias hosts='sudo /etc/hosts atom .'
-alias edit='sudo vim /etc/hosts'
+alias ehosts='sudo vim /etc/hosts'
 
 # Restart window
 alias wtf="source ~/.zshrc"
@@ -30,17 +30,17 @@ alias ddocs="~/dev/doableInnovation.github.io"
 alias ddf="~/dev/_doable/doable-frontend"
 alias ddb="~/dev/_doable/doable-backend"
 alias awsl="eval $(aws ecr get-login)"
-alias ddbs="rails s -p 3002 -e local-development"
 
 # Docker
 alias default='docker-machine start default && eval $(docker-machine env default) && docker-compose up'
 
 # Other projects
-alias tommy='cd ~/dev/_projects/tommy/tommydunn.com'
+alias ms='cd ~/dev/_projects/tommy/tommyldunn.com'
 alias ty='cd ~/dev/tymontague.com'
 alias katie='cd ~/dev/_projects/katie'
 alias jackie='cd ~/dev/_projects/jackie/jacquelynmaloney.com'
 alias dfiles="cd ~/.dotfiles"
+alias ea="cd ~/.dotfiles"
 alias projects="~/dev/_projects"
 
 # Get operating system
@@ -187,10 +187,9 @@ alias gz='tar -zcvf'
 alias c='rails c' # Rails 3
 alias cod='script/console --debugger'
 
-#If you want your thin to listen on a port for local VM development
-#export VM_IP=10.0.0.1 <-- your vm ip
+# If you want your thin to listen on a port for local VM development
+# export VM_IP=10.0.0.1 <-- your vm ip
 alias ts='thin start -a ${VM_IP:-127.0.0.1}'
-alias ms='mongrel_rails start'
 alias tfdl='tail -f log/development.log'
 alias tftl='tail -f log/test.log'
 

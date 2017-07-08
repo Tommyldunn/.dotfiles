@@ -31,3 +31,4 @@ tags
 .atom/recovery
 .DS_STORE
 _tmp
+_tmp/.fasd

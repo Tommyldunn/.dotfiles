@@ -2,6 +2,7 @@
 # Executes commands at the start of an interactive session.
 #
 
+export PS1="$ "
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then

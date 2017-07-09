@@ -20,19 +20,20 @@ alias emo="open http://www.emoji-cheat-sheet.com/"
 alias searchcask="open https://www.caskroom.github.io/search"
 alias chrome="open https://google.com"
 
-# Doable specific
-alias release='git checkout release && git pull origin release'
+# Switching between main base branches
+alias production='git checkout production && git pull origin production'
 alias development='git checkout development && git pull origin development'
 alias staging='git checkout staging && git pull origin staging'
 
-alias dd="~/dev/doable"
-alias ddocs="~/dev/doableInnovation.github.io"
+alias dd="~/dev/_doable"
 alias ddf="~/dev/_doable/doable-frontend"
 alias ddb="~/dev/_doable/doable-backend"
-alias awsl="eval $(aws ecr get-login)"
 
 # Docker
 alias default='docker-machine start default && eval $(docker-machine env default) && docker-compose up'
+
+# Login to AWS
+alias awsl="eval $(aws ecr get-login)"
 
 # Other projects
 alias ms='cd ~/dev/_projects/tommy/tommyldunn.com'

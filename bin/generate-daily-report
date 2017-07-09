@@ -1,0 +1,8 @@
+#!/bin/sh
+# by Tommy Dunn
+
+# destination of the final daily-tracker file
+OUTPUT_FILE="dev-daily-"$(date +%m-%d-%Y)".md"
+
+# generate the daily-tracker
+git --no-pager log --no-merges --since="yesterday" --format="### %s%d%n> %ar%n> Author: %aN %n%n" > 'daily-reports/'${OUTPUT_FILE}

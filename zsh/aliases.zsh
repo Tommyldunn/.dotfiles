@@ -6,10 +6,13 @@ dotfiles=$HOME/.dotfiles
 # export TOMMY_DUNN="$HOME/.dotfiles/secrets"
 
 # Edit hosts file
-alias hosts='sudo /etc/hosts atom .'
-alias ehosts='sudo vim /etc/hosts'
+alias ehf='atom /etc/hosts'
+alias vehf='vim /etc/hosts'
 
- # Open Xcode Simulator
+# Open daily status doc
+alias dsd="atom ~/desktop/_daily-status/doable-daily-dev-status.md"
+
+# Open Xcode Simulator
 alias btest='./BrowserStackLocal 3pnfSaBZ2KhXRQBE51EP'
 
 # Restart window
@@ -56,9 +59,11 @@ if [[ $unamestr == 'Linux' ]]; then
   platform='darwin'
 fi
 
-# dotfiles support
-alias ea="vim ~/.dotfiles/zsh/aliases.zsh"
-alias dfiles="cd ~/.dotfiles && atom ."
+# Dotfiles support
+alias eda="atom ~/.dotfiles/zsh/aliases.zsh" # edit aliases
+alias dfd="cd ~/.dotfiles" # cd to dotfiles directory
+alias odf="~/.dotfiles && atom ." # cd and open dotfiles directory
+
 alias yav='dotfiles vim-add-plugin'
 alias ydv='dotfiles vim-delete-plugin'
 alias ylv='dotfiles vim-list-plugin'

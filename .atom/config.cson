@@ -20,7 +20,6 @@
     disabledPackages: [
       "linter-rubocop"
     ]
-    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".hg"
       ".svn"

@@ -10,8 +10,8 @@
   "editor.minimap.enabled": true,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "Inconsolata-dz for Powerline",
-  "editor.fontSize": 15,
-  "editor.lineHeight": 25,
+  "editor.fontSize": 12,
+  // "editor.lineHeight": 25,
   "editor.rulers": [
     80
   ],
@@ -26,7 +26,7 @@
   "editor.renderLineHighlight": "all",
 
   // workbench
-  "workbench.colorTheme": "Chester Atom",
+  "workbench.colorTheme": "Super One Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.colorCustomizations": {
@@ -55,7 +55,7 @@
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
   // "window.openFoldersInNewWindow": "off",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
 
   // github
   "git.path": "/Users/tdunn/github",
@@ -78,7 +78,7 @@
   // terminal
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontLigatures": true,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
 
@@ -227,5 +227,9 @@
   },
   "vsicons.presets.hideFolders": true,
   "vsicons.presets.foldersAllDefaultIcon": true,
-  "vsicons.projectDetection.disableDetect": true
+  "vsicons.projectDetection.disableDetect": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "eslint.nodePath": "/Users/tdunn/.config/yarn/global/node_modules",
+  "tslint.nodePath": "/Users/tdunn/.config/yarn/global/node_modules"
 }

@@ -4,9 +4,13 @@
 dotfiles=$HOME/.dotfiles
 
 # export TOMMY_DUNN="$HOME/.dotfiles/secrets"
+
 # Edit hosts file
 alias hosts='sudo /etc/hosts atom .'
 alias ehosts='sudo vim /etc/hosts'
+
+ # Open Xcode Simulator
+alias btest='./BrowserStackLocal 3pnfSaBZ2KhXRQBE51EP'
 
 # Restart window
 alias wtf="source ~/.zshrc"

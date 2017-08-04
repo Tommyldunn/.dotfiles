@@ -19,7 +19,6 @@
   core:
     disabledPackages: [
       "linter-rubocop"
-      "tree-ignore"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -29,8 +28,6 @@
       "._*"
       "Thumbs.db"
       "desktop.ini"
-      "node_modules"
-      "yarn.lock"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
@@ -46,6 +43,17 @@
     softWrap: true
   "exception-reporting":
     userId: "2b0e0e15-3f3d-4321-83dd-ccabce2208aa"
+  github:
+    filesystemEventDiagnostics: true
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  jslint:
+    validateOnChange: true
+  "language-log":
+    tail: true
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    globalNodePath: "/Users/tdunn/.config/yarn/global/node_modules"
+    useGlobalEslint: true
   "linter-rubocop":
     command: "/Users/tdunn/.rbenv/versions/2.4.0/bin/rubocop"
     disableWhenNoConfigFile: true
@@ -70,6 +78,8 @@
     forceOverwrite: true
   pigments:
     markerType: "native-dot"
+  "svg-preview":
+    openPreviewAutomatically: true
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: false

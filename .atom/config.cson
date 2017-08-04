@@ -43,6 +43,12 @@
     softWrap: true
   "exception-reporting":
     userId: "2b0e0e15-3f3d-4321-83dd-ccabce2208aa"
+  gist:
+    token: "GIST_ACCESS_TOKEN"
+  "gist-it":
+    newGistsDefaultToPrivate: true
+    openAfterCreate: true
+    userToken: "GIST_ACCESS_TOKEN"
   github:
     filesystemEventDiagnostics: true
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"

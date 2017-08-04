@@ -16,6 +16,7 @@ vim/sessions
 bin/subl
 tags
 .DS_STORE
+
 # Atom sync
 /.atom/blob-store/
 /.atom/compile-cache/
@@ -28,7 +29,8 @@ tags
 /.atom/.apm
 /.atom/.node-gyp
 /.atom/.npm
-.atom/recovery
+/.atom/gist.token
+/.atom/recovery
 .DS_STORE
 _tmp
 _tmp/.fasd

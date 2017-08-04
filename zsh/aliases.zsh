@@ -16,7 +16,7 @@ alias btest='./BrowserStackLocal 3pnfSaBZ2KhXRQBE51EP'
 alias wtf="source ~/.zshrc"
 
 # Flush dns cache
-alias cache="sudo discoveryutil udnsflushcaches"
+alias fcache="sudo discoveryutil udnsflushcaches"
 
 # open up emoji cheat sheet in browser
 alias emo="open http://www.emoji-cheat-sheet.com/"
@@ -40,10 +40,10 @@ alias default='docker-machine start default && eval $(docker-machine env default
 alias awsl="eval $(aws ecr get-login)"
 
 # Other projects
-alias ms='cd ~/dev/_projects/tommy/tommyldunn.com'
-alias ty='cd ~/dev/tymontague.com'
+alias ms='cd ~/dev/_projects/tommy'
+alias ty='cd ~/dev/_co/tymontague.com'
 alias katie='cd ~/dev/_projects/katie'
-alias jackie='cd ~/dev/_projects/jackie/jacquelynmaloney.com'
+alias jackie='cd ~/dev/_projects/jackie'
 alias projects="cd ~/dev/_projects"
 alias atm="atom ."
 
@@ -58,7 +58,7 @@ fi
 
 # dotfiles support
 alias ea="vim ~/.dotfiles/zsh/aliases.zsh"
-alias dfiles="cd ~/.dotfiles"
+alias dfiles="cd ~/.dotfiles && atom ."
 alias yav='dotfiles vim-add-plugin'
 alias ydv='dotfiles vim-delete-plugin'
 alias ylv='dotfiles vim-list-plugin'
@@ -178,6 +178,7 @@ alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias grb='git recent-branches'
 
 # Common shell functions
 alias tf='tail -f'
@@ -205,15 +206,13 @@ alias k9='kill -9'
 # Gem install
 alias gemi='gem install --no-ri --no-rdoc'
 
-
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
 
-
-# Rspec
+# Rails // Rspec
 alias rs='rspec spec'
 alias sr='spring rspec'
 alias src='spring rails c'
@@ -222,13 +221,11 @@ alias srdm='spring rake db:migrate'
 alias srdt='spring rake db:migrate'
 alias srdmt='spring rake db:migrate db:test:prepare'
 
-
-alias grb='git recent-branches'
-
 # Finder
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
+# Rails // Spring
 alias dbtp='spring rake db:test:prepare'
 alias dbm='spring rake db:migrate'
 alias dbmr='spring rake db:migrate:redo'

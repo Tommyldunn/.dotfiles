@@ -4,6 +4,8 @@ packages: [
   "autoclose-html"
   "busy-signal"
   "file-icons"
+  "gist"
+  "gist-it"
   "git-time-machine"
   "html-to-css"
   "improved-chester-atom-syntax"

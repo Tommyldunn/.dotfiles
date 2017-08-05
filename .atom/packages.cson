@@ -2,6 +2,7 @@ packages: [
   "atom-beautify"
   "atom-typescript"
   "autoclose-html"
+  "autoprefixer"
   "busy-signal"
   "file-icons"
   "gist"

@@ -51,6 +51,8 @@
   github:
     filesystemEventDiagnostics: true
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  "html-to-css":
+    "bem-group": true
   jslint:
     validateOnChange: true
   "language-log":

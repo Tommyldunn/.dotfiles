@@ -83,6 +83,8 @@
     forceOverwrite: true
   pigments:
     markerType: "native-dot"
+  "ruby-block":
+    highlightLineNumber: true
   "svg-preview":
     openPreviewAutomatically: true
   "tree-view":

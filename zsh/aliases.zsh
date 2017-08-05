@@ -9,8 +9,9 @@ dotfiles=$HOME/.dotfiles
 alias ehf='atom /etc/hosts'
 alias vehf='vim /etc/hosts'
 
-# Open daily status doc
-alias dsd="atom ~/desktop/_daily-status/doable-daily-dev-status.md"
+# Open daily status directory
+alias dsd="atom ~/desktop/_daily-status/daily-dev"
+alias daily="cd ~/desktop/_daily-status/daily-dev" # cd
 
 # Open Xcode Simulator
 alias btest='./BrowserStackLocal 3pnfSaBZ2KhXRQBE51EP'

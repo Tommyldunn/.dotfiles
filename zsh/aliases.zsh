@@ -44,6 +44,7 @@ alias default='docker-machine start default && eval $(docker-machine env default
 alias awsl="eval $(aws ecr get-login)"
 
 # Other projects
+alias dogs="cd ~/dev/_projects/dogs-bollocks/the-dogs-bollocks && atom ."
 alias ms='cd ~/dev/_projects/tommy'
 alias ty='cd ~/dev/_co/tymontague.com'
 alias katie='cd ~/dev/_projects/katie'
@@ -61,6 +62,7 @@ if [[ $unamestr == 'Linux' ]]; then
 fi
 
 # Dotfiles support
+alias veda="vim ~/.dotfiles/zsh/aliases.zsh" # edit aliases with vim
 alias eda="atom ~/.dotfiles/zsh/aliases.zsh" # edit aliases
 alias dfd="cd ~/.dotfiles" # cd to dotfiles directory
 alias odf="~/.dotfiles && atom ." # cd and open dotfiles directory
@@ -196,13 +198,7 @@ alias cl='clear'
 # Zippin
 alias gz='tar -zcvf'
 
-# Ruby
-alias c='rails c' # Rails 3
-alias cod='script/console --debugger'
-
-# If you want your thin to listen on a port for local VM development
-# export VM_IP=10.0.0.1 <-- your vm ip
-alias ts='thin start -a ${VM_IP:-127.0.0.1}'
+# Rails
 alias tfdl='tail -f log/development.log'
 alias tftl='tail -f log/test.log'
 
@@ -215,8 +211,11 @@ alias gemi='gem install --no-ri --no-rdoc'
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
 
+# Rake
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
+alias seed:dev="rake db:seed:seed_development"
+alias dcms="rake db:drop && rake db:create && rake db:migrate && rake db:seed:seed_development"
 
 # Rails // Rspec
 alias rs='rspec spec'

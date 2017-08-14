@@ -18,11 +18,11 @@
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
   "editor.wordWrap": "off",
-  "editor.overviewRulerBorder": false,
+  // "editor.overviewRulerBorder": false,
   "editor.fontLigatures": true,
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": true,
-  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "all",
 
   // workbench
@@ -55,7 +55,7 @@
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
   // "window.openFoldersInNewWindow": "off",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.6,
 
   // github
   "git.path": "/Users/tdunn/github",

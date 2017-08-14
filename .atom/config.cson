@@ -32,12 +32,13 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "improved-chester-atom-syntax"
+      "chester-atom-syntax"
     ]
     titleBar: "custom-inset"
   "default-language":
     defaultLanguage: "Shell Script"
   editor:
+    autoIndent: false
     fontFamily: "Inconsolata-dz for Powerline"
     softWrap: true
   "exception-reporting":
@@ -78,6 +79,10 @@
     tooltipFollows: "Keyboard"
   "markdown-preview":
     useGitHubStyle: true
+  minimap:
+    plugins:
+      pigments: true
+      pigmentsDecorationsZIndex: 0
   "one-dark-ui":
     hideDockButtons: true
   "package-sync":

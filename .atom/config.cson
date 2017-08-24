@@ -19,7 +19,8 @@
   core:
     disabledPackages: [
       "linter-rubocop"
-      "language-text"
+      "default-language"
+      "plain-simple"
     ]
     ignoredNames: [
       ".hg"
@@ -41,6 +42,7 @@
   editor:
     autoIndent: false
     fontFamily: "Inconsolata-dz for Powerline"
+    fontSize: 12
     softWrap: true
   "exception-reporting":
     userId: "2b0e0e15-3f3d-4321-83dd-ccabce2208aa"

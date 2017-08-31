@@ -43,7 +43,8 @@ alias default='docker-machine start default && eval $(docker-machine env default
 # Login to AWS
 alias awsl="eval $(aws ecr get-login)"
 
-# Other projects
+# Other projects & moving around my dir's
+alias dev="cd ~/dev"
 alias dogs="cd ~/dev/_projects/dogs-bollocks/the-dogs-bollocks && atom ."
 alias ms='cd ~/dev/_projects/tommy'
 alias ty='cd ~/dev/_co/tymontague.com'

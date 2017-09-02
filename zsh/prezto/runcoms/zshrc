@@ -15,3 +15,4 @@ for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
 export NVM_DIR="$HOME/.dotfiles/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 eval "$(rbenv init -)"
+source <(antibody init)

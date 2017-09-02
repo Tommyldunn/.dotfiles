@@ -231,6 +231,9 @@ alias srdmt='spring rake db:migrate db:test:prepare'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
+# Dock spacers
+alias dockSpace=`defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'`
+
 # Rails // Spring
 alias dbtp='spring rake db:test:prepare'
 alias dbm='spring rake db:migrate'

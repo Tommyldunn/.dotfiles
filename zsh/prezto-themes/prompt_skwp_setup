@@ -69,8 +69,8 @@ function prompt_skwp_setup {
   zstyle ':prezto:module:node:info:version' format '⬢ %v'
 
   PROMPT="${__PROMPT_SKWP_COLORS[4]}%f ${__PROMPT_SKWP_COLORS[5]}%~%f "'$git_info[prompt]'"$ "
-  RPROMPT='%F{green}${node_info[version]%f %F{red}${ruby_info[version]}'
-  # RPROMPT='%F{green}${node_info[version]}'
+  # RPROMPT='%F{green}${node_info[version]%f %F{red}${ruby_info[version]}'
+  RPROMPT='%F{green}${node_info[version]}'
   # RPROMPT='%F{red}${ruby_info[version]}'
 }
 

@@ -1,2 +1,4 @@
 prompt skwp
-# prompt spaceship
+# prompt agnoster
+# prompt pure
+# prompt purer

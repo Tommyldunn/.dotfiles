@@ -25,6 +25,7 @@ packages: [
   "linter-scss-lint"
   "linter-tslint"
   "linter-ui-default"
+  "markdown-preview-enhanced"
   "markdown-preview-plus"
   "markdown-scroll-sync"
   "merge-conflicts"

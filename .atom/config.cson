@@ -19,8 +19,8 @@
   core:
     disabledPackages: [
       "linter-rubocop"
-      "default-language"
       "plain-simple"
+      "markdown-preview-plus"
     ]
     ignoredNames: [
       ".hg"
@@ -38,7 +38,7 @@
     ]
     titleBar: "custom-inset"
   "default-language":
-    defaultLanguage: "Plain Simple Text"
+    defaultLanguage: "shell script"
   editor:
     autoIndent: false
     fontFamily: "Inconsolata-dz for Powerline"
@@ -81,6 +81,13 @@
     showPanel: true
     tooltipFollows: "Keyboard"
   "markdown-preview":
+    breakOnSingleNewline: true
+    openPreviewInSplitPane: false
+    useGitHubStyle: true
+  "markdown-preview-enhanced":
+    previewTheme: "one-light.css"
+  "markdown-preview-plus":
+    breakOnSingleNewline: true
     useGitHubStyle: true
   minimap:
     plugins:

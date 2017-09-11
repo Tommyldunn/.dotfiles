@@ -232,7 +232,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # Dock spacers
-alias dockSpace=`defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'`
+# alias dockSpace=`defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'`
 
 # Rails // Spring
 alias dbtp='spring rake db:test:prepare'

@@ -25,6 +25,9 @@ alias fcache="sudo discoveryutil udnsflushcaches"
 # open up emoji cheat sheet in browser
 alias emo="open http://www.emoji-cheat-sheet.com/"
 
+# open angular-cli
+alias aclid="open https://github.com/angular/angular-cli"
+
 alias searchcask="open https://www.caskroom.github.io/search"
 alias chrome="open https://google.com"
 
@@ -199,10 +202,6 @@ alias cl='clear'
 # Zippin
 alias gz='tar -zcvf'
 
-# Rails
-alias tfdl='tail -f log/development.log'
-alias tftl='tail -f log/test.log'
-
 alias ka9='killall -9'
 alias k9='kill -9'
 
@@ -220,12 +219,6 @@ alias dcms="rake db:drop && rake db:create && rake db:migrate && rake db:seed:se
 
 # Rails // Rspec
 alias rs='rspec spec'
-alias sr='spring rspec'
-alias src='spring rails c'
-alias srgm='spring rails g migration'
-alias srdm='spring rake db:migrate'
-alias srdt='spring rake db:migrate'
-alias srdmt='spring rake db:migrate db:test:prepare'
 
 # Finder
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
@@ -233,13 +226,6 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # Dock spacers
 # alias dockSpace=`defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'`
-
-# Rails // Spring
-alias dbtp='spring rake db:test:prepare'
-alias dbm='spring rake db:migrate'
-alias dbmr='spring rake db:migrate:redo'
-alias dbmd='spring rake db:migrate:down'
-alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'

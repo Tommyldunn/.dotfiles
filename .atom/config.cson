@@ -1,5 +1,9 @@
 "*":
   "atom-beautify":
+    css:
+      align_assignments: true
+      beautify_on_save: true
+      convert_quotes: "single"
     general:
       _analyticsUserId: "d9e15803-719a-4ab4-97b8-03b8403fb795"
       loggerLevel: "verbose"
@@ -99,7 +103,12 @@
     createOnChange: true
     forceOverwrite: true
   pigments:
+    extendAutocompleteToColorValue: true
+    extendAutocompleteToVariables: true
     markerType: "native-dot"
+    mergeColorDuplicates: true
+    sassShadeAndTintImplementation: "bourbon"
+    sortPaletteColors: "by color"
   "ruby-block":
     highlightLineNumber: true
   "svg-preview":
@@ -109,6 +118,9 @@
     hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false
+".source.ts":
+  editor:
+    autoIndent: true
 ".source.yaml":
   editor:
     autoIndentOnPaste: true

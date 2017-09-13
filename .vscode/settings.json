@@ -11,14 +11,12 @@
   "editor.formatOnPaste": true,
   "editor.fontFamily": "Inconsolata-dz for Powerline",
   "editor.fontSize": 12,
-  // "editor.lineHeight": 25,
   "editor.rulers": [
     80
   ],
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
   "editor.wordWrap": "off",
-  // "editor.overviewRulerBorder": false,
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
@@ -26,8 +24,8 @@
   "editor.renderLineHighlight": "all",
 
   // workbench
-  "workbench.colorTheme": "Super One Dark",
-  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "Chester Atom",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.colorCustomizations": {
     "statusBar.background": "#3c3c3c",
@@ -54,14 +52,13 @@
   // window
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
-  // "window.openFoldersInNewWindow": "off",
-  "window.zoomLevel": 0.6,
+  "window.zoomLevel": 0.9,
 
   // github
   "git.path": "/Users/tdunn/github",
 
   // files
-  "files.trimTrailingWhitespace": true,
+  "files.trimTrailingWhitespace": false,
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.exclude": {
@@ -83,7 +80,6 @@
   "terminal.integrated.cursorStyle": "line",
 
   // typescript
-  "typescript.check.tscVersion": true,
   "typescript.referencesCodeLens.enabled": false,
 
   // linting
@@ -230,6 +226,10 @@
   "vsicons.projectDetection.disableDetect": true,
   "eslint.autoFixOnSave": true,
   "eslint.enable": true,
-  "eslint.nodePath": "/Users/tdunn/.config/yarn/global/node_modules",
-  "tslint.nodePath": "/Users/tdunn/.config/yarn/global/node_modules"
+  "tslint.validateWithDefaultConfig": true,
+  "tslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4/bin/node",
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "eslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4/bin/node"
+  // "eslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4",
+  // "tslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4"
 }

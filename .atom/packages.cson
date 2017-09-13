@@ -17,6 +17,7 @@ packages: [
   "jslint"
   "language-babel"
   "language-dotenv"
+  "language-javascript-jsx"
   "language-log"
   "lint"
   "linter"

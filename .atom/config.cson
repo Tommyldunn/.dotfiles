@@ -25,6 +25,7 @@
       "linter-rubocop"
       "plain-simple"
       "markdown-preview-plus"
+      "gist"
     ]
     ignoredNames: [
       ".hg"

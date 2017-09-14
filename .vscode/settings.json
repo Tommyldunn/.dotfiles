@@ -24,7 +24,7 @@
   "editor.renderLineHighlight": "all",
 
   // workbench
-  "workbench.colorTheme": "Chester Atom",
+  "workbench.colorTheme": "Material Neutral - Classic",
   "workbench.iconTheme": "vscode-icons",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.colorCustomizations": {
@@ -229,7 +229,8 @@
   "tslint.validateWithDefaultConfig": true,
   "tslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4/bin/node",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
-  "eslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4/bin/node"
+  "eslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4/bin/node",
+  "gist.oauth_token": "e36a72e6d5e7f0105549abbb9c69ce32cc75cc73"
   // "eslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4",
   // "tslint.nodePath": "/Users/tdunn/.dotfiles/.nvm/versions/node/v7.7.4"
 }

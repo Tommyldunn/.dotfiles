@@ -4,6 +4,13 @@
 #  * Git branch info on the left
 #  * Single line prompt
 #
+# Authors:
+#   Steve Losh <steve@stevelosh.com>
+#   Bart Trojanowski <bart@jukie.net>
+#   Brian Carper <brian@carper.ca>
+#   steeef <steeef@gmail.com>
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Yan Pritzker <yan@pritzker.ws>
 
 function prompt_skwp_precmd {
   setopt LOCAL_OPTIONS
@@ -15,11 +22,6 @@ function prompt_skwp_precmd {
     git-info
   fi
 
-  # Get node information
-  if (( $+functions[node-info] )); then
-    node-info
-  fi
-
   # Get ruby information
   if (( $+functions[ruby-info] )); then
     ruby-info
@@ -29,7 +31,7 @@ function prompt_skwp_precmd {
 function prompt_skwp_setup {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
-  prompt_opts=(cr percent subst)
+  prompt_opts=(cr percent sp subst)
 
   autoload -Uz add-zsh-hook
 
@@ -63,15 +65,10 @@ function prompt_skwp_setup {
   zstyle ':prezto:module:git:info:keys' format 'prompt' '(%b%d%a%m%u)'
 
   # ruby info (rvm, rbenv)
-  zstyle ':prezto:module:ruby:info:version' format '💎 %v'
+  zstyle ':prezto:module:ruby:info:version' format '[%v]'
 
-  # node info (nvm)
-  zstyle ':prezto:module:node:info:version' format '⬢ %v'
-
-  PROMPT=" ${__PROMPT_SKWP_COLORS[4]}%f ${__PROMPT_SKWP_COLORS[5]}%~%f "'$git_info[prompt]'"$ "
-  # RPROMPT='%F{green}${node_info[version]%f %F{red}${ruby_info[version]}'
-  RPROMPT='%F{green}${node_info[version]}'
-  # RPROMPT='%F{red}${ruby_info[version]}'
+  PROMPT="${__PROMPT_SKWP_COLORS[3]}%n%f@${__PROMPT_SKWP_COLORS[2]}%m%f ${__PROMPT_SKWP_COLORS[5]}%~%f "'$git_info[prompt]'"$ "
+  RPROMPT='%F{blue}${ruby_info[version]}'
 }
 
 prompt_skwp_setup "$@"

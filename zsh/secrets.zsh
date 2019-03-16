@@ -1,3 +1,3 @@
 if [ -e ~/.secrets ]; then
-  source ~/./.secrets.sh
+  source ~/.secrets
 fi

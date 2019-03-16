@@ -12,16 +12,16 @@ Powerline for [Prezto](http://github.com/sorin-ionescu/prezto) ZSH
 
 ## Dependencies
 
-* [skwp/dotfiles](http://github.com/skwp/dotfiles) *(dotfiles)*
-* [prezto](https://github.com/sorin-ionescu/prezto) (included by dotfiles)
+* [skwp/dotfiles](http://github.com/skwp/dotfiles) *(YADR)*
+* [prezto](https://github.com/sorin-ionescu/prezto) (included by YADR)
 
 ## Installation
 
-    # Install dotfiles
-    git clone https://github.com/skwp/dotfiles ~/.dotfiles
-    cd ~/.dotfiles && rake install
+    # Install YADR
+    git clone https://github.com/skwp/dotfiles ~/.yadr
+    cd ~/.yadr && rake install
 
-    # Create a ~/.secrets file (required by dotfiles)
+    # Create a ~/.secrets file (required by YADR)
     touch ~/.secrets
 
     # Install the prompt

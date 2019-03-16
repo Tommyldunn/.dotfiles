@@ -1,12 +1,12 @@
 require 'rake'
 require 'fileutils'
-require File.join(File.dirname(__FILE__), 'bin', 'dotfiles', 'vundle')
+require File.join(File.dirname(__FILE__), 'bin', 'yadr', 'vundle')
 
 desc "Hook our dotfiles into system-standard positions."
 task :install => [:submodule_init, :submodules] do
   puts
   puts "======================================================"
-  puts "Welcome To My Dotfiles."
+  puts "Welcome to YADR Installation."
   puts "======================================================"
   puts
 
@@ -46,8 +46,8 @@ desc 'Updates the installation'
 task :update do
   Rake::Task["vundle_migration"].execute if needs_migration_to_vundle?
   Rake::Task["install"].execute
-  # TODO: for now, we do the same as install. But it would be nice
-  # not to clobber zsh files
+  #TODO: for now, we do the same as install. But it would be nice
+  #not to clobber zsh files
 end
 
 task :submodule_init do
@@ -60,11 +60,11 @@ desc "Init and update submodules."
 task :submodules do
   unless ENV["SKIP_SUBMODULES"]
     puts "======================================================"
-    puts "Downloading Dunndlelinger submodules...please wait"
+    puts "Downloading YADR submodules...please wait"
     puts "======================================================"
 
     run %{
-      cd $HOME/.dotfiles
+      cd $HOME/.yadr
       git submodule update --recursive
       git clean -df
     }
@@ -103,7 +103,7 @@ task :install_vundle do
   vundle_path = File.join('vim','bundle', 'vundle')
   unless File.exists?(vundle_path)
     run %{
-      cd $HOME/.dotfiles
+      cd $HOME/.yadr
       git clone https://github.com/gmarik/vundle.git #{vundle_path}
     }
   end
@@ -172,8 +172,8 @@ def install_homebrew
   puts "======================================================"
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
-  run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi hub}
-  run %{brew install macvim --custom-icons --with-override-system-vim --with-lua --with-luajit}
+  run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi}
+  run %{brew install macvim --with-override-system-vim --with-lua --with-luajit}
   puts
   puts
 end
@@ -182,8 +182,8 @@ def install_fonts
   puts "======================================================"
   puts "Installing patched fonts for Powerline/Lightline."
   puts "======================================================"
-  run %{ cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts } if RUBY_PLATFORM.downcase.include?("darwin")
-  run %{ mkdir -p ~/.fonts && cp ~/.dotfiles/fonts/* ~/.fonts && fc-cache -vf ~/.fonts } if RUBY_PLATFORM.downcase.include?("linux")
+  run %{ cp -f $HOME/.yadr/fonts/* $HOME/Library/Fonts } if RUBY_PLATFORM.downcase.include?("darwin")
+  run %{ mkdir -p ~/.fonts && cp ~/.yadr/fonts/* ~/.fonts && fc-cache -vf ~/.fonts } if RUBY_PLATFORM.downcase.include?("linux")
   puts
 end
 
@@ -259,22 +259,22 @@ def install_prezto
   puts
   puts "Installing Prezto (ZSH Enhancements)..."
 
-  run %{ ln -nfs "$HOME/.dotfiles/zsh/prezto" "${ZDOTDIR:-$HOME}/.zprezto" }
+  run %{ ln -nfs "$HOME/.yadr/zsh/prezto" "${ZDOTDIR:-$HOME}/.zprezto" }
 
   # The prezto runcoms are only going to be installed if zprezto has never been installed
   install_files(Dir.glob('zsh/prezto/runcoms/z*'), :symlink)
 
   puts
-  puts "Overriding prezto ~/.zpreztorc with my zpreztorc to enable additional modules..."
-  run %{ ln -nfs "$HOME/.dotfiles/zsh/prezto-override/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
+  puts "Overriding prezto ~/.zpreztorc with YADR's zpreztorc to enable additional modules..."
+  run %{ ln -nfs "$HOME/.yadr/zsh/prezto-override/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
 
   puts
   puts "Creating directories for your customizations"
-  run %{ mkdir -p $HOME/.dotfiles/_tmp/.zsh.before }
-  run %{ mkdir -p $HOME/.dotfiles/_tmp/.zsh.after }
-  run %{ mkdir -p $HOME/.dotfiles/_tmp/.zsh.prompts }
+  run %{ mkdir -p $HOME/.zsh.before }
+  run %{ mkdir -p $HOME/.zsh.after }
+  run %{ mkdir -p $HOME/.zsh.prompts }
 
-  if ENV["SHELL"].include? 'zsh' then
+  if "#{ENV['SHELL']}".include? 'zsh' then
     puts "Zsh is already configured as your shell of choice. Restart your session to load the new settings"
   else
     puts "Setting zsh as your default shell"
@@ -311,7 +311,7 @@ def install_files(files, method = :symlink)
 
     if File.exists?(target) && (!File.symlink?(target) || (File.symlink?(target) && File.readlink(target) != source))
       puts "[Overwriting] #{target}...leaving original at #{target}.backup..."
-      run %{ mv "$HOME/.#{file}" "$HOME/.dotfiles/_tmp/_backups/.#{file}.backup" }
+      run %{ mv "$HOME/.#{file}" "$HOME/.#{file}.backup" }
     end
 
     if method == :symlink
@@ -321,9 +321,9 @@ def install_files(files, method = :symlink)
     end
 
     # Temporary solution until we find a way to allow customization
-    # This modifies zshrc to load all of dotfiles's zsh extensions.
-    # Eventually dotfiles's zsh extensions should be ported to prezto modules.
-    source_config_code = "for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file"
+    # This modifies zshrc to load all of yadr's zsh extensions.
+    # Eventually yadr's zsh extensions should be ported to prezto modules.
+    source_config_code = "for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file"
     if file == 'zshrc'
       File.open(target, 'a+') do |zshrc|
         if zshrc.readlines.grep(/#{Regexp.escape(source_config_code)}/).empty?
@@ -331,6 +331,7 @@ def install_files(files, method = :symlink)
         end
       end
     end
+
     puts "=========================================================="
     puts
   end
@@ -358,14 +359,12 @@ end
 
 def success_msg(action)
   puts ""
-  puts "  ______                       _ _      _ _                         "
-  puts "  |  _  \                     | | |    | (_)                        "
-  puts "  | | | |_   _ _ __  _ __   __| | | ___| |_ _ __   __ _  ___ _ __   "
-  puts "  | | | | | | | '_ \| '_ \ / _` | |/ _ \ | | '_ \ / _` |/ _ \ '__|  "
-  puts "  | |/ /| |_| | | | | | | | (_| | |  __/ | | | | | (_| |  __/ |     "
-  puts "  |___/  \__,_|_| |_|_| |_|\__,_|_|\___|_|_|_| |_|\__, |\___|_|     "
-  puts "                                                   __/ |            "
-  puts "                                                  |___/             "
+  puts "   _     _           _         "
+  puts "  | |   | |         | |        "
+  puts "  | |___| |_____  __| | ____   "
+  puts "  |_____  (____ |/ _  |/ ___)  "
+  puts "   _____| / ___ ( (_| | |      "
+  puts "  (_______\_____|\____|_|      "
   puts ""
-  puts "DUNNDLELINGER has been #{action}. Please restart your terminal and vim."
+  puts "YADR has been #{action}. Please restart your terminal and vim."
 end

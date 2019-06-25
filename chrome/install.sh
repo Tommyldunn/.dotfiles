@@ -4,4 +4,4 @@
 
 # Use:
 DIR="$( cd "$( dirname "$0" )" && pwd )"
-ln -s -f $DIR/Custom.css $HOME/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css
+ln -s -f $DIR/Custom.css "$HOME/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css"

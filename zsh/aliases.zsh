@@ -11,7 +11,7 @@ alias vehf='vim /etc/hosts'
 #
 # Edit wp config
 #
-alias ehwpc='atom /Users/tommy/Sites/weremagnetic.com/wp-config.php'
+alias ewpc='atom /Users/tommy/Sites/weremagnetic.com/wp-config.php'
 
 #
 # Restart window
@@ -64,12 +64,13 @@ alias projects='cd ~/_dev/_projects' # cd int
 alias ms='cd ~/_dev/_projects/tommyldunn' # cd into tommy.com directory
 alias dev:ms='cd ~/_dev/_projects/tommyldunn && atom .' # cd into tommyldunn.com directory and open atom
 alias atm='atom .'
+alias mb:sites:dev="cd ~/sites/dev.michellebablo.com/wp-content/themes/MichelleBablo && atom ." # start deving MichelleBablo.com
 
 #
 # Magnetic directory support
 #
-alias mag:sites:dev="cd ~/sites/weremagnetic.com/wp-content/themes/sage-master && atom ." # start deving magnetic.com
-alias mag:sites="cd ~/sites/weremagnetic.com/wp-content/themes/sage-master" # cd into sites/weremagnetic.com (php apps)
+alias mag:sites:dev="cd ~/sites/weremagnetic.com/wp-content/themes/were-magnetic && atom ." # start deving magnetic.com
+alias mag:sites="cd ~/sites/weremagnetic.com/wp-content/themes/were-magnetic" # cd into sites/weremagnetic.com (php apps)
 alias mag:css="cd ~/_dev/_magnetic/were-magnetic-styles" # cd into mag styles directory
 alias mag:app="cd ~/_dev/_magnetic/magnetic-app" # cd into mag app directory
 alias mag:dev="dev && cd _magnetic" # cd into root mag directory (non php apps)

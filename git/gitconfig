@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+  excludesfile = ~/.dotfiles/git/gitignore
 [advice]
   statusHints = false
 [diff]
@@ -125,11 +125,15 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[user]
+	email = tommylogandunn@gmail.com
+	name = tommydunn
 [filter "lfs"]
+	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-	required = true
-[user]
-	name = tommydunn
-	email = tommylogandunn@gmail.com
+[github]
+	user = tommydunn
+[ghi]
+	token = !security find-internet-password -a tommydunn -s github.com -l 'ghi token' -w

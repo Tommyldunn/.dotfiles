@@ -262,3 +262,5 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# alias jackie:deploy:stag='now alias .now.sh staging.jacquelynmaloney.com'

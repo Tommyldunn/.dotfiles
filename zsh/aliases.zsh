@@ -9,11 +9,6 @@ alias ehf='atom /etc/hosts'
 alias vehf='vim /etc/hosts'
 
 #
-# Edit wp config
-#
-alias ewpc='atom /Users/tdunn/Sites/local.weremagnetic.com/wp-config.php'
-
-#
 # Restart window
 #
 alias wtf='source ~/.zshrc'
@@ -66,20 +61,10 @@ alias projects='cd ~/_dev/_projects' # cd int
 #
 # My Projects
 #
-alias ms='cd ~/_dev/_projects/tommyldunn' # cd into tommy.com directory
-alias dev:ms='cd ~/_dev/_projects/tommyldunn && atom .' # cd into tommyldunn.com directory and open atom
+alias ms='cd ~/_dev/tommydunn.io' # cd into tommy.com directory
+alias dev:ms='cd ~/_dev/tommydunn.io && atom .' # cd into tommyldunn.com directory and open atom
 alias atm='atom .'
 alias mb:sites:dev="cd ~/sites/dev.michellebablo.com/wp-content/themes/MichelleBablo && atom ." # start deving MichelleBablo.com
-
-#
-# Magnetic directory support
-#
-alias mag:dev="cd ~/sites/local.weremagnetic.com/wp-content/themes/were-magnetic && atom ." # start deving magnetic.com
-alias mag:sites="cd ~/sites/local.weremagnetic.com/wp-content/themes/were-magnetic" # cd into sites/local.weremagnetic.com (php apps)
-alias mag:test="cd ~/sites/testing-localflywheel/app/public/wp-content/themes/were-magnetic"
-alias mag:css="cd ~/_dev/_magnetic/were-magnetic-styles" # cd into mag styles directory
-alias mag:app="cd ~/_dev/_magnetic/magnetic-app" # cd into mag app directory
-alias mag:d="dev && cd _magnetic" # cd into root mag directory (non php apps)
 
 #
 # Don't change. The following determines where YADR is installed.

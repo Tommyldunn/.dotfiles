@@ -64,7 +64,7 @@ alias projects='cd ~/_dev/_projects' # cd int
 alias ms='cd ~/_dev/tommydunn.io' # cd into tommy.com directory
 alias dev:ms='cd ~/_dev/tommydunn.io && atom .' # cd into tommyldunn.com directory and open atom
 alias atm='atom .'
-alias mb:sites:dev="cd ~/sites/dev.michellebablo.com/wp-content/themes/MichelleBablo && atom ." # start deving MichelleBablo.com
+alias q:sites="cd ~/sites/quantumedgehr/wp-content/themes/quantumedge" # start deving quantumedge.com
 
 #
 # Don't change. The following determines where YADR is installed.
